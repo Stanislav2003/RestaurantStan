@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation"
+        app:startDestination="@id/fragmentMenu">
+        <fragment
+            android:id="@+id/fragmentMenu"
+            android:name="com.example.restaurantstan.FragmentMenu"
+            android:label="FragmentMenu" >
+            <action
+                android:id="@+id/action_fragmentMenu_to_fragmentRegistre"
+                app:destination="@id/fragmentRegistre" />
+            <action
+                android:id="@+id/action_fragmentMenu_to_fragmentInici"
+                app:destination="@id/fragmentInici" />
+        </fragment>
+        <fragment
+            android:id="@+id/fragmentInici"
+            android:name="com.example.restaurantstan.FragmentInici"
+            android:label="fragment_inici"
+            tools:layout="@layout/fragment_inici" />
+    <fragment
+        android:id="@+id/fragmentRegistre"
+        android:name="com.example.restaurantstan.FragmentRegistre"
+        android:label="fragment_registre"
+        tools:layout="@layout/fragment_registre" >
+        <action
+            android:id="@+id/action_fragmentRegistre_to_fragmentDemanarPlats"
+            app:destination="@id/fragmentDemanarPlats" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDemanarPlats"
+        android:name="com.example.restaurantstan.FragmentDemanarPlats"
+        android:label="FragmentDemanarPlats" />
+</navigation>
