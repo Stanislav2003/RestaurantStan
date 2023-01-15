@@ -32,5 +32,13 @@
     <fragment
         android:id="@+id/fragmentDemanarPlats"
         android:name="com.example.restaurantstan.FragmentDemanarPlats"
-        android:label="FragmentDemanarPlats" />
+        android:label="FragmentDemanarPlats" >
+        <action
+            android:id="@+id/action_fragmentDemanarPlats_to_totalPlatsBegudes"
+            app:destination="@id/totalPlatsBegudes" />
+    </fragment>
+    <fragment
+        android:id="@+id/totalPlatsBegudes"
+        android:name="com.example.restaurantstan.TotalPlatsBegudes"
+        android:label="TotalPlatsBegudes" />
 </navigation>

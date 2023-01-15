@@ -10,18 +10,26 @@ import com.example.restaurantstan.MVVM.Provider
 
    class MyViewModel : ViewModel() {
 
+       val  quoteModelBegudes = MutableLiveData<List<ModelBegudes>>()
         val quoteModelPlats = MutableLiveData<List<ModelPlats>>()
-        val quatoModelBegudes = MutableLiveData<List<ModelBegudes>>()
 
-        fun randomPlatBeguda() {
-            var Plat : List<ModelPlats> = Provider.Plats()
-            var Beguda : List<ModelBegudes> = Provider.Begudes()
-            quoteModelPlats.postValue(Plat)
-            quatoModelBegudes.postValue(Beguda)
 
-        }
+//        fun randomPlatBeguda()  {
+//            var Plat : List<ModelPlats> = Provider.Plats()
+//            var Beguda : List<ModelBegudes> = Provider.Begudes()
+//            quoteModelPlats.postValue(Plat)
+//            quatoModelBegudes.postValue(Beguda)
+//        }
+
        fun getPlats():List<ModelPlats>{
            return Provider.Plats()
        }
+
+       fun getBegudes():List<ModelBegudes>{
+           return Provider.Begudes()
+       }
+
+
+
     }
 

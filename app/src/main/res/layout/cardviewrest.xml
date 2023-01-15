@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="10dp"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="32dp"
     app:cardCornerRadius="4dp"
-    android:layout_margin="10dp">
+    app:cardElevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="209dp"
+        android:layout_height="match_parent"
+        android:background="#C8BDBD"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/NomPlat"
+            android:id="@+id/NomItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Card1"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/PreuPlat"
+            android:id="@+id/PreuItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Card1"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
 
         <!--        <ImageView-->
-<!--            android:id="@+id/Imatge"-->
-<!--            android:layout_width="73dp"-->
-<!--            android:layout_height="79dp"-->
-<!--            android:importantForAccessibility="no"-->
-<!--            android:scaleType="centerCrop" />-->
+        <!--            android:id="@+id/Imatge"-->
+        <!--            android:layout_width="73dp"-->
+        <!--            android:layout_height="79dp"-->
+        <!--            android:importantForAccessibility="no"-->
+        <!--            android:scaleType="centerCrop" />-->
 
     </LinearLayout>
 
