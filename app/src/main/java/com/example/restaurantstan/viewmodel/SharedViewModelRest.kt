@@ -12,7 +12,7 @@ class SharedViewModelRest : ViewModel() {
 
 //    val BegudesShare = MutableLiveData<ModelBegudes>()
       val PlatsShare= MutableLiveData<ModelPlats>()
-      val PlatsShare2 = MutableLiveData<MutableList<ModelPlats>>()
+      val PlatsShare2 = MutableLiveData<List<ModelPlats>>()
 
     // function to send message
     fun assignPlat(plats: ModelPlats) {

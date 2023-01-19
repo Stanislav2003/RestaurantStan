@@ -6,10 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
@@ -28,6 +30,7 @@ class TotalPlatsBegudes : Fragment() {
 
     //lateinit var SharedViewPlat : SharedViewModelRest
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateView(
 
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,15 +50,15 @@ class TotalPlatsBegudes : Fragment() {
 //
 //
 //        })
-        var llistaPlatsTotal = binding.llistaPlatsTotal
-
-
-        SharedViewPlat.PlatsShare2.observe(viewLifecycleOwner
-        ) { platets ->
-           llistaPlatsTotal.adapter = ArrayAdapter<String>(requireActivity(), android.R.layout.simple_list_item_1,platets)
-            for(i in 0..platets.size-1)
-            binding.llistaPlatsTotal.getItemAtPosition((i))
-        }
+//        var llistaPlatsTotal = binding.llistaPlatsTotal
+//
+//
+//        SharedViewPlat.PlatsShare2.observe(viewLifecycleOwner
+//        ) { platets ->
+//           llistaPlatsTotal.adapter = ArrayAdapter<ModelPlats>(requireActivity(),android.R.layout.simple_list_item_1,platets)
+//            for(i in 0..platets.size-1)
+//            binding.llistaPlatsTotal.getItemAtPosition((i))
+//        }
 //        SharedViewPlat.PlatsShare.observe(viewLifecycleOwner
 //        ) { platets ->
 //            binding.platTotal.setText(platets.nomPlat+"preu"+platets.preuPlat)
@@ -64,6 +67,8 @@ class TotalPlatsBegudes : Fragment() {
         return binding.root
     }
 
-    }
+
+
+}
 
 
